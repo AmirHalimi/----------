@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+   <title>Inventory App</title>
+</head>
+<body class="bg-dark text-light">
+   <main>
+      <!------ AppBar ------>
+      <div class="AppBar bg-light text-dark text-center py-2">
+         <h1>
+         Inventory App
+         </h1>
+      </div>
+      <!------ Form For Category ------>
+      <div class="Add-Category container w-50 mb-4">
+         <h2>
+            Add New Category
+         </h2>
+         <form>
+            <div class="Title mb-2">
+               <label for="text">Title</label>
+               <br>
+               <input type="text">
+            </div>
+            <div class="Description mb-2">
+               <label for="">Description</label>
+               <br>
+               <textarea></textarea>
+            </div>
+            <div class="Btn-AddCategory">
+               <button>Cancel</button>
+               <button>Add New Category</button>
+            </div>
+         </form>
+      </div>
+      <!------ Form For Product ------>
+      <div class="Add-Product container w-50 mb-4">
+         <h2>
+            Add New Product
+         </h2>
+         <form>
+            <div class="Title mb-2">
+               <label for="text"">Title</label>
+               <br>
+               <input type="text">
+            </div>
+            <div class="Quantity mb-2">
+               <label>Quantity</label>
+               <br>
+               <input type="number">
+            </div>
+            <div class="Category mb-4">
+               <label for="">Category</label>
+               <br>
+               <select>
+                  <option>Category1</option>
+                  <option>Category2</option>
+                  <option>Category3</option>
+               </select>
+            </div>
+            <div class="Btn-Product">
+               <button>Add New Product</button>
+            </div>
+         </form>
+      </div>
+      <!------ Form For Product ------>
+      <div class="Product-List container w-50">
+         <div class="List-Title">
+            <h2>
+               Product List
+            </h2>
+         </div>
+         <div class="List d-flex flex-column g-1">
+            <div class="Product">
+               <p class="Product-Title m-0">
+                  React js
+               </p>
+               <div>
+                  <div class="Type-Product">
+                     Frontend
+                  </div>
+                  <div class="number">
+                     7
+                  </div>
+                  <button class="Delete-Product">
+                     Delete
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@import "_component.scss";
+
+//////? base
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+}
+
+
+//////? main
+/// Design Form Category Section...  
+.AddCategory h2 {
+   font-size: 23px;
+   padding: 7px 3px;
+}
+form {
+   border: 1px solid $primary-color;
+   border-radius: $border-radius;
+   padding: 20px;
+}
+.Title input {
+   @include design-input();
+}
+
+.Description textarea {
+   @include design-input();
+}
+
+.Btn-AddCategory {
+   width: 100%;
+   display: flex;
+   gap: 2%;
+   button {
+      @include design-Btn();
+   }
+}
+/// Design Form Product Section...  
+.AddProduct h2{
+   font-size: 23px;
+   padding: 7px 3px;
+}
+.Quantity input {
+   @include design-input();
+}
+.Category select {
+   @include design-input();
+}
+.Btn-Product button{
+   @include design-Btn();
+   width: 100%;
+}
+/// Design Product List 
+.Product {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid $primary-color;
+   border-radius: 40px;
+   padding: 10px 20px;
+   div {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 16px;
+      .Type-Product {
+         font-size: 13px;
+         color: $primary-color;
+      }
+      .number {
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         border: 1px solid $primary-color;
+         padding: 5px;
+      }
+      .Delete-Product {
+         @include design-Btn();
+         padding: 3px 15px;
+      }
+   }
+}
